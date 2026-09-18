@@ -1,0 +1,8 @@
+{
+  "cues": [
+    { "start": 0, "duration": 2500, "text": "片头：山谷晨雾" },
+    { "start": 2200, "duration": 1800, "text": "补录旁白：迁徙开始" },
+    { "start": 4000, "duration": 3000, "text": "雁群掠过湖面" },
+    { "start": 6500, "duration": 2200, "text": "结尾字幕" }
+  ]
+}

@@ -1,0 +1,230 @@
+:root {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  color: #1f2933;
+  background: #f5f7fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 24px 60px;
+}
+
+header h1 {
+  font-size: 22px;
+  margin: 8px 0 4px;
+}
+
+.hint {
+  color: #52606d;
+  font-size: 13px;
+  margin: 0 0 16px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+button {
+  border: 1px solid #cbd2d9;
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  border-color: #8492a6;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+button.primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+button.mini {
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.meta {
+  color: #616e7c;
+  font-size: 12px;
+}
+
+.error {
+  background: #fde8e8;
+  border: 1px solid #f29b9b;
+  color: #9b1c1c;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.banner {
+  background: #e6fffa;
+  border: 1px solid #7fd4c7;
+  color: #234e52;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.banner .ok {
+  margin-left: 8px;
+  color: #2c7a7b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 13px;
+  border: 1px solid #e4e7eb;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e4e7eb;
+  padding: 6px 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+th {
+  background: #f0f4f8;
+  font-weight: 600;
+  font-size: 12px;
+  color: #334e68;
+  position: sticky;
+  top: 0;
+}
+
+tr.moved {
+  background: #fffaf0;
+}
+
+tr.moved td {
+  border-bottom-color: #fbd38d;
+}
+
+.col-idx {
+  width: 56px;
+  color: #7b8794;
+  font-variant-numeric: tabular-nums;
+}
+
+.col-time {
+  width: 130px;
+  font-variant-numeric: tabular-nums;
+}
+
+.col-pin {
+  width: 280px;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+}
+
+.delta {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.delta.pos {
+  color: #b7791f;
+}
+
+.delta.neg {
+  color: #c05621;
+}
+
+.delta.zero {
+  color: #a0aec0;
+}
+
+.pin {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pin-val {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: #ebf8ff;
+  border: 1px solid #90cdf4;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 12px;
+}
+
+.pin-edit {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 6px;
+}
+
+.pin-edit input {
+  width: 110px;
+  padding: 2px 6px;
+  font-size: 12px;
+  border: 1px solid #90cdf4;
+  border-radius: 4px;
+}
+
+.text-cell {
+  max-width: 360px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dur {
+  color: #829ab1;
+  font-size: 11px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.empty {
+  color: #7b8794;
+  font-size: 13px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.pager {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  font-size: 13px;
+  color: #52606d;
+}
